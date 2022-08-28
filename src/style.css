@@ -1,0 +1,150 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+    margin: 0 auto;
+    background-image: url('../img/cloud.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #8eccd8;
+    
+}
+
+h1,
+h2,
+h3,
+h5,
+p,
+.btn {
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 0 5px 30px #34093fe1;
+    text-transform: capitalize;
+    color: #34093fe1;
+}
+
+.unitBtn {
+    position: absolute;
+    color: #520d4488;
+
+}
+
+#cBtn {
+    left: 37px;
+    top: 2px;
+    
+}
+
+#fBtn {
+    left: 7px;
+    top: 2px;
+}
+
+.wind,
+.humid {
+    text-shadow: 0 2px 15px #34093fe1;
+    color: #520d4488;
+}
+
+.app {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 50px 50px 10px 50px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #fdd2f1 15%, #8eccd8 55%, #034b83 100%);
+    color: #520d4488;
+    box-shadow: 0px 2px rgba(82, 13, 68, 0.533);
+    color: #034b83;
+    opacity: .6;
+}
+
+input[type="checkbox"] {
+    width: 60px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    background: #C1B8CF;
+    border-radius: 7px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+input[type="checkbox"]::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    z-index: 3;
+    width: 17px;
+    height: 17px;
+    margin: 0 5px;
+    background: #520d4488;
+    border-radius: 30%;
+    transition: 0.4s ease-in-out;
+}
+
+input:checked[type="checkbox"]::before {
+    left: 31px;
+    background: #520d4488;
+}
+
+.toggle {
+    position: relative;
+    display: inline;
+}
+
+.search {
+    color: #520d4488;
+    border: none;
+    border-radius: 5px;
+}
+
+#search {
+    background-color: #C1B8CF;
+    border-radius: 7px;
+    border: 1px #520d4488 solid;
+}
+
+.butn {
+    color: #520d4488;
+    background-color: #C1B8CF;
+    border: 1px #520d4488 solid;
+    border-radius: 7px;
+    box-shadow: 0px 1px #520d4488;
+}
+
+.submit-butn {
+    margin-left: 24px;
+}
+
+hr {
+    border: thin solid #376a92;
+    max-width: 95%;
+    margin: 5px auto 10px;
+}
+
+.col-7 {
+    text-indent: 60px;
+}
+
+.weekdays {
+    text-align: center;
+    margin: 0 20px 0 20px;
+}
+
+.wkday {
+    transition: 0.3s ease-in-out;
+}
+
+.wkday:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    text-align: center;
+}
+
+#github {
+    color: #520d4488;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe55a0cc96.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="app">
+            <!--header-->
+            <div class="row">
+                <div class="head col-5">
+                    <h2><span class="date">sunday</span></h2>
+                </div>
+                <div class="head col-4">
+                    <h2>
+                        <span class="hour"> 00</span>:<span class="minutes">00</span>
+                    </h2>
+                </div>
+                <div class="head col-3">
+                    <div class="toggle">
+                        <input type="checkbox" id="checkbox" />
+                        <label for class="unitBtn" id="cBtn">C</label>
+                        <label for class="unitBtn" id="fBtn">F</label>
+                    </div>
+
+                </div>
+            </div>
+            <br />
+            <!--search bar-->
+            <div class="row">
+                <div class="search col">
+                    <form class="form" id="location">
+                        <input id="search" type="search" placeholder="Enter a city" autocomplete="off" /><input
+                            class="butn submit-butn" type="submit" value="Search" />
+                    </form>
+                </div>
+                <div class="search col">
+                    <div class="currentLocation">
+                        <button class="butn">Current Location</button>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+           
+            <div class="display row">
+                <div class="col-7">
+                    <h1 class="city">Search City</h1>
+                    <h3 id="condition"></h3>
+                    <h2 class="temp"></h2>
+                </div>
+                <div class="col-5">
+                    <img src="" alt="" id="todayImage" />
+                    <h4 class="humid"></h4>
+                    <h4 class="wind"></h4>
+                </div>
+            </div>
+
+            <br /><br />
+            <hr />
+            <br /><br />
+            <br /><br />
+            
+            <div class="row weekdays">
+                <div class="col wkday">
+                    <h5 class="forecast1"></h5>
+                    <img src="" alt="" id="icon1" />
+                    <h5 class="forecastTemp1"></h5>
+                </div>
+
+                
+
+                <div class="col wkday">
+                    <h5 class="forecast2"></h5>
+                    <img src="" alt="" id="icon2" />
+                    <h5 class="forecastTemp2"></h5>
+                </div>
+
+               
+
+                <div class="col wkday">
+                    <h5 class="forecast3"></h5>
+                    <img src="" alt="" id="icon3" />
+                    <h5 class="forecastTemp3"></h5>
+                </div>
+
+                
+
+                <div class="col wkday">
+                    <h5 class="forecast4"></h5>
+                    <img src="" alt="" id="icon4" />
+                    <h5 class="forecastTemp4"></h5>
+                </div>
+
+                
+
+                <div class="col wkday">
+                    <h5 class="forecast5"></h5>
+                    <img src="" alt="" id="icon5" />
+                    <h5 class="forecastTemp5"></h5>
+                </div>
+            </div>
+            <br /><br />
+            <p class="footer">
+                <a id="github" href="https://github.com/" target="_blank">Open-source code</a>
+                by
+                <a href="img/sea.jpg" target="blank" class="link">Tetiana Zhuravlova</a>
+               
+               
+            </p>
+        </div>
+
+        <footer></footer>
+    </div>
+    <script src="src/script.js"></script>
+    
+</body>
+
+</html>
